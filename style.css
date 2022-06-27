@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white url('Book.gif') no-repeat center;
+    z-index: 999;
+
+}
+
+.main{
+    background-color: aqua;
+}
+
+.icon-bar {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	z-index: 10;
+}
+
+.icon-bar a {
+    margin-top: 10px;
+	text-decoration: none;
+	width: 210px;
+	/* background: #3b5999; */
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 5px;
+	font-size: 20px;
+	transform: translateX(-170px);
+	-webkit-transform: translateX(-170px);
+	-ms-transform: translateX(-70px);
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+}
+
+.facebook {
+	background: #3b5998;
+}
+.twitter {
+	background: #00aced;
+}
+
+.gmail {
+	background: #ea4335;
+}
+
+.phone {
+	background: #34a853;
+}
+
+.linkedin {
+	background: #0077B5;
+}
+
+
+a i {
+	padding-left: 20px;
+	font-size: 30px !important;
+	animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+	from {
+		transform: scale(0.8);
+	}
+
+	to {
+		transform: scale(1);
+	}
+
+}
+
+a:hover {
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+}
+
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #343a40;
+    /* height :  5rem;
+    width  :  100vh; */
+}
+
+.footer p{
+    color: white;
+    font-size: 1.6rem; 
+    text-align: center;
+    /* line-height: 1rem; */
+}  
+
+
+.jumbotron {
+    color: white;
+    background-image: url("webdevvvv.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+  }
+
+.lead{
+    color: #00aced;
+    font-weight: 400;
+}  
+
+.display-5{
+    color: #00aced;
+    font-weight: bolder;
+}
+
+.display-4{
+    color: #00aced;
+    font-size:x-large;
+    font-weight: bold;
+}
+
+
+.card-container{
+    margin-top: 12%;
+    margin-left: 14%;
+}
+
+#myskill{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-right: 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-style: oblique;
+    /* padding-right: 15%; */
+}
+
+
+.card:hover{
+    transform: scale(1.1);
+
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:-1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+
+}
+.card-text{
+    text-align: center;
+}
+.card{
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.card-textt{
+    font-size: larger;
+    font-weight: 200;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.hobby-text{
+    text-align: center;
+    margin-bottom: 4%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-style: oblique;
+}
+.hobby-container{
+
+    margin: 7% 7% 10% 7%;
+
+}
+.hobby-card1{
+    border-style: inset;
+    border-radius: 25% ;
+    border-width: 7px;
+    border-color: cyan;
+    /* padding-bottom: 75%; */
+    text-align: center;
+    /* padding-bottom: 76%; */
+    padding: 1%;
+    transition: transform 0.7s;
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(28, 198, 192, 0.75);
+    -moz-box-shadow:-1px 9px 40px -12px rgba(28, 198, 192, 0.75);
+    box-shadow: -1px 9px 40px -12px rgba(28, 198, 192, 0.75);
+}
+.hobby-card2{
+    border-style: inset;
+    border-radius: 25% ;
+    border-width: 7px;
+    border-color: cyan;
+    /* padding-bottom: 75%; */
+    text-align: center;
+    transition: transform 0.7s;
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(28, 198, 192, 0.75);
+    -moz-box-shadow:-1px 9px 40px -12px rgba(28, 198, 192, 0.75);
+    box-shadow: -1px 9px 40px -12px rgba(28, 198, 192, 0.75);
+
+}
+
+.image{
+    margin-top: 7%;
+    margin-left: 7%;
+    height: 25%;
+    width: 25%;
+}
+.hobby-card-text{
+    background-image: url('a.svg');
+}
+.graphic-text{
+    margin-top: 5%;
+    text-align: center;
+}
+.cricket-text{
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 5%;
+}
+.card-text{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+.hobby-card1:hover{
+    transform: scale(1.2);
+}
+.hobby-card2:hover{
+    transform: scale(1.2);
+}
+
+.resume{
+    text-decoration: none;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 3rem;
+    }
+  }
+  
+  .card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .flex-auto {
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+  }
+  
+  .h-250 { height: 250px; }
+  @media (min-width: 768px) {
+    .h-md-250 { height: 250px; }
+  }
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+  .about-container{
+    /* padding-left: 25%;
+    padding-left: 25%; */
+    margin-top: 12%;
+    margin-right: 25%;
+    margin-left: 25%;
+    /* align-items: center; */
+    /* margin-left: 50%; */
+  }
+
+  .aboutme{
+    margin-bottom: 7%;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+  }
+
+  .aboutcard{
+    border-style: inset;
+    border-width: 15px;
+    border-color: black;
+    height: 10%;
+  }
+
+#pec{
+    font-size: medium;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+
+
+.textt{
+    font-family: cursive;
+    font-weight: 300;
+    color: rgba(200, 24, 24, 0.662);
+}
+
+
+.projectt{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    font-style: oblique;
+}
+.item{
+    border: inset;
+    border-width: 15px;
+    margin-bottom: 5%;
+    width:  45%;
+    /* text-align: center; */
+    margin-left: 27.5%;
+
+}
+#abcd{
+    font-family: fantasy;
+    color: rgb(43, 243, 140);
+}
+#snehil{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: antiquewhite;
+}
+
+#love{
+    height: 4vh;
+    width: 4vh;
+}
